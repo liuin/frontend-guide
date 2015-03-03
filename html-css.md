@@ -170,21 +170,21 @@
         <link rel="stylesheet" href="grid.css" media="screen">
         <link rel="stylesheet" href="print.css" media="print">
         <h1 style="font-size: 1em;">HTML sucks</h1>
-        <p>I’ve read about this on a few sites but now I’m sure:
+        <p>I’ve read about this on a few sites but now I’m sure:</p>
           <u>HTML is stupid!!1</u>
         <center>I can’t believe there’s no way to control the styling of
           my website without doing everything all over again!</center>
-
+        
         <!-- 推荐 -->
         <!DOCTYPE html>
         <title>My first CSS-only redesign</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="default.css">
-        <h1>My first CSS-only redesign</h1>
-        <p>I’ve read about this on a few sites but today I’m actually
-          doing it: separating concerns and avoiding anything in the HTML of
-          my website that is presentational.
-        <p>It’s awesome!
+        <h1>HTML sucks</h1>
+        <p>I’ve read about this on a few sites but now I’m sure:</p>
+          <u>HTML is stupid!!1</u>
+        <center>I can’t believe there’s no way to control the styling of
+          my website without doing everything all over again!</center>
 
 ###实体引用
 
