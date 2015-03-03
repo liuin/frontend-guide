@@ -21,15 +21,11 @@
         <!-- 推荐 -->
         <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
 
-        /* 不推荐 */
-        .example {
-          background: url(http://www.google.com/images/example);
-        }
+        /*-- 不推荐 --*/
+        .example {background: url(http://www.google.com/images/example);}
 
-        /* 推荐 */
-        .example {
-          background: url(//www.google.com/images/example);
-        }
+        /*-- 推荐 --*/
+        .example {background: url(//www.google.com/images/example);}
 
 ##排版规则
 
@@ -43,9 +39,7 @@
           <li>Fantastic
           <li>Great
         </ul>
-        .example {
-          color: blue;
-        }
+        .example {color: blue;}
 
 ###大小写
 
@@ -184,6 +178,7 @@
         <!-- 推荐 -->
         <!DOCTYPE html>
         <title>My first CSS-only redesign</title>
+	<link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="default.css">
         <h1>My first CSS-only redesign</h1>
         <p>I’ve read about this on a few sites but today I’m actually
@@ -296,19 +291,19 @@
 - 通用名称可以加在兄弟元素都不特殊或没有个别意义的元素上，可以起名类似“helpers”这样的泛。
 - 使用功能性或通用的名字会减少不必要的文档或模板修改。
 
-        /* 不推荐: 无意义 不易理解 */
+        /*-- 不推荐: 无意义 不易理解 --*/
         #yee-1901 {}
         
-        /* 不推荐: 表达不具体 */
+        /*-- 不推荐: 表达不具体 --*/
         .button-green {}
         .clear {}
 
-        /* 推荐: 明确详细 */
+        /*-- 推荐: 明确详细 --*/
         #gallery {}
         #login {}
         .video {}
         
-        /* 推荐: 通用 */
+        /*-- 推荐: 通用 --*/
         .aux {}
         .alt {}
 
@@ -319,11 +314,11 @@
 - 简要传达ID或class是关于什么的。
 - 通过这种方式，似的代码易懂且高效。
 
-        /* 不推荐 */
+        /*-- 不推荐 --*/
         #navigation {}
         .atr {}
 
-        /* 推荐 */
+        /*-- 推荐 --*/
         #nav {}
         .author {}
 
@@ -334,11 +329,11 @@
 - 非必要的情况下不要使用元素标签名和ID或class进行组合。
 - 出于性能上的考虑避免使用父辈节点做选择器 performance reasons.
 
-        /* 不推荐 */
+        /*-- 不推荐 --*/
         ul#example {}
         div.error {}
 
-        /* 推荐 */
+        /*-- 推荐 --*/
         #example {}
         .error {}
 
@@ -349,7 +344,7 @@
 - CSS很多属性都支持缩写shorthand （例如 font ） 尽量使用缩写，甚至只设置一个值。
 - 使用缩写可以提高代码的效率和方便理解。
 
-        /* 不推荐 */
+        /*-- 不推荐 --*/
         border-top-style: none;
         font-family: palatino, georgia, serif;
         font-size: 100%;
@@ -359,7 +354,7 @@
         padding-right: 1em;
         padding-top: 0;
 
-        /* 推荐 */
+        /*-- 推荐 --*/
         border-top: 0;
         font: 100%/1.6 palatino, georgia, serif;
         padding: 0 1em 2em;
@@ -395,10 +390,10 @@
 
 - 加颜色值时候会用到它，使用3个字符的十六进制更短与简洁。
 
-        /* 不推荐 */
+        /*-- 不推荐 --*/
         color: #eebbcc;
 
-        /* 推荐 */
+        /*-- 推荐 --*/
         color: #ebc;
 
 ###前缀
@@ -408,21 +403,21 @@
 - 大型项目中最好在ID或class名字前加上这种标识性前缀（命名空间），使用短破折号链接。
 - 使用命名空间可以防止命名冲突，方便维护，比如在搜索和替换操作上。
 
-        .adw-help {} /* AdWords */
-        #maia-note {} /* Maia */
+        .adw-help {} /*-- AdWords --*/
+        #maia-note {} /*-- Maia --*/
 
 ###ID和class命名的定界符
 
 - ID和class名字有多单词组合的用短破折号“-”分开。
 - 别在选择器名字里用短破折号“-”以外的连接词(包括啥也没有)， 以增进对名字的理解和查找。
 
-        /* 不推荐：“demo”和“image”中间没加“-” */
+        /*-- 不推荐：“demo”和“image”中间没加“-” --*/
         .demoimage {}
         
-        /* 不推荐：用下划线“_”是屌丝的风格 */
+        /*-- 不推荐：用下划线“_”是屌丝的风格 --*/
         .error_status {}
 
-        /* 推荐 */
+        /*-- 推荐 --*/
         #video-id {}
         .ads-sample {}
 
@@ -434,22 +429,6 @@
 
 ##CSS代码格式规则
 
-###声明顺序
-
-依字母顺序进行声明。
-
-- 都按字母顺序声明，很容易记住和维护。
-- 忽略浏览器的特定前缀排序，但多浏览器特定的某个CSS属性前缀应相对保持排序（例如-moz前缀在-webkit前面）。
-
-        background: fuchsia;
-        border: 1px solid;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        color: black;
-        text-align: center;
-        text-indent: 2em;
-
 ###代码块内容缩进
 
 缩进所有代码块（“{}”之间）内容。
@@ -457,12 +436,7 @@
 - 缩进所有代码块的内容，它能够提高层次结构的清晰度。
 
         @media screen, projection {
-        
-          html {
-            background: #fff;
-            color: #444;
-          }
-        
+          html { background: #fff; color: #444; }
         }
 
 ###声明完结
@@ -471,33 +445,12 @@
 
 - 考虑到一致性和拓展性，请在每个声明尾部都加上分号。
 
-        /* 不推荐 */
-        .test {
-          display: block;
-          height: 100px
-        }
+        /*-- 不推荐 --*/
+        .test {  display: block; height: 100px  }
 
-        /* 推荐 */
-        .test {
-          display: block;
-          height: 100px;
-        }
+        /*-- 推荐 --*/
+        .test { display: block; height: 100px; }
 
-###属性名完结
-
-在属性名冒号结束后加一个空字符。
-
-- 出于一致性的原因，在属性名和值之间加一个空格（可不是属性名和冒号之间噢）。
-
-        /* 不推荐 */
-        h3 {
-          font-weight:bold;
-        }
-
-        /* 推荐 */
-        h3 {
-          font-weight: bold;
-        }
 
 ###选择器和声明分行
 
@@ -505,33 +458,23 @@
 
 - 每个选择器和声明都要独立新行。
 
-        /* 不推荐 */
-        a:focus, a:active {
-          position: relative; top: 1px;
-        }
-
-        /* 推荐 */
+        /*-- 不推荐 --*/
         h1,
         h2,
-        h3 {
-          font-weight: normal;
-          line-height: 1.2;
-        }
+        h3 { font-weight: normal;line-height: 1.2;}
+
+        /*-- 推荐 --*/
+        a:focus, a:active {position: relative; top: 1px;}
 
 ###规则分行
 
 每个规则独立一行。
 
-- 两个规则之间隔行。
+- 如果两个规则没有直接的继承关系 那两个之间隔行。
 
-        html {
-          background: #fff;
-        }
+        html {background: #fff;}
         
-        body {
-          margin: auto;
-          width: 50%;
-        }
+        body { margin: auto;width: 50%;}
 
 ##CSS元数据规则
 
@@ -541,16 +484,16 @@
 
 - 如果可以，按照功能的类别来对一组样式表写统一注释。独立成行。
 
-        /* Header */
+        /*-- Header --*/
         #adw-header {}
         
-        /* Footer */
+        /*-- Footer --*/
         #adw-footer {}
         
-        /* Gallery */
+        /*-- Gallery --*/
         .adw-gallery {}
 
-##来源
+##来源参考
 
 [http://chajn.org/htmlcssguide/htmlcssguide.html](http://chajn.org/htmlcssguide/htmlcssguide.html)
 
