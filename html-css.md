@@ -220,7 +220,7 @@
         <!-- 推荐 -->
         <!DOCTYPE html>
         <title>Saving money, saving bytes</title>
-        <p>Qed.
+        <p>Qed.</p>
 
 ###type属性
 
@@ -230,15 +230,13 @@
 - HTML5默认 type 为 text/css 和 text/javascript 类型，所以没必要指定。即便是老浏览器也是支持的。
 
         <!-- 不推荐 -->
-        <link rel="stylesheet" href="//www.google.com/css/maia.css"
-          type="text/css">
+        <link rel="stylesheet" href="//www.google.com/css/maia.css" type="text/css">
 
         <!-- 推荐 -->
         <link rel="stylesheet" href="//www.google.com/css/maia.css">
 
         <!-- 不推荐 -->
-        <script src="//www.google.com/js/gweb/analytics/autotrack.js"
-          type="text/javascript"></script>
+        <script src="//www.google.com/js/gweb/analytics/autotrack.js" type="text/javascript"></script>
 
         <!-- 推荐 -->
         <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
