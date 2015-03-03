@@ -178,7 +178,7 @@
         <!-- 推荐 -->
         <!DOCTYPE html>
         <title>My first CSS-only redesign</title>
-	<link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="default.css">
         <h1>My first CSS-only redesign</h1>
         <p>I’ve read about this on a few sites but today I’m actually
